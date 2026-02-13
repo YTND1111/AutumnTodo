@@ -9,37 +9,31 @@
   </head>
 
   <body>
-    <main class="scene">
-      <div class="ambient ambient-top"></div>
-      <div class="ambient ambient-bottom"></div>
+    <main class="container">
+      <h1>Welcome to Tauri</h1>
 
-      <section class="glass-card">
-        <div class="glass-sheen"></div>
-        <h1>Autumn Todo</h1>
-        <p class="subtitle">Liquid glass style on Tauri + Windows</p>
+      <div class="row">
+        <a href="https://tauri.app" target="_blank">
+          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
+        </a>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          target="_blank"
+        >
+          <img
+            src="/assets/javascript.svg"
+            class="logo vanilla"
+            alt="JavaScript logo"
+          />
+        </a>
+      </div>
+      <p>Click on the Tauri logo to learn more about the framework</p>
 
-        <div class="row logos">
-          <a href="https://tauri.app" target="_blank">
-            <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-          </a>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-            target="_blank"
-          >
-            <img
-              src="/assets/javascript.svg"
-              class="logo vanilla"
-              alt="JavaScript logo"
-            />
-          </a>
-        </div>
-
-        <form class="row" id="greet-form">
-          <input id="greet-input" placeholder="输入名字试试..." />
-          <button type="submit">问候</button>
-        </form>
-        <p id="greet-msg"></p>
-      </section>
+      <form class="row" id="greet-form">
+        <input id="greet-input" placeholder="Enter a name..." />
+        <button type="submit">Greet</button>
+      </form>
+      <p id="greet-msg"></p>
     </main>
   </body>
 </html>

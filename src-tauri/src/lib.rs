@@ -17,7 +17,7 @@ pub fn run() {
                 #[cfg(target_os = "windows")]
                 {
                     
-                    let _ = apply_acrylic(&window, Some((0, 0, 0, 0)));
+                    let _ = apply_acrylic(&window, Some((255, 0, 0, 100)));
                 }
             }
 
